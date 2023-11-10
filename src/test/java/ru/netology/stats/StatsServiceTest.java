@@ -20,7 +20,7 @@ public class StatsServiceTest {
     public void shouldCalculateAverageSales() {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        double expected = 15.0;
+        double expected = 15;
 
         double actual = service.calculateAverageSales(sales);
 
@@ -31,7 +31,7 @@ public class StatsServiceTest {
     public void shouldFindPeakMonth() {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 6;
+        int expected = 8;
 
         int actual = service.findPeakMonth(sales);
 
